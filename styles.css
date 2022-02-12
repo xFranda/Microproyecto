@@ -309,10 +309,46 @@ body {
     line-height: 1.7;
     margin-bottom: 15px;
     font-size:large;
-    font-weight: 400;
-
 }
 .exp_imgs {
      width: 100%;
      display: block;
+ }
+  /* Información de mis Proyectos*/
+
+.info {
+    text-align: center;
+
+ }
+
+.subtitulo {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+
+ }
+.info_parrafo { line-height: 1.7;}
+
+.info_main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+ }
+
+.info_logos {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260;
+    overflow: hidden;
+    margin: 0 auto;
+
+ }
+
+.info_logo {
+    width: 60 px;
  }
