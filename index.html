@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="shortcur icon" href="./images/favicon3.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Portafolio Estudiantil</title>
@@ -38,7 +38,40 @@
                     <img src="./images/menu.svg" class ="nav_img">
                 </div>
             </nav>
+                <!-- Contenedor del carrusel -->
+    <div class="slideshow-container">
 
+        <!-- Carrusel como tal -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/carrusel1.jpg" class="carrusel_img" style="width:100%">
+            <div class="text">1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/carrusel2.jpg" class="carrusel_img" style="width:100%">
+            <div class="text">2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/carrusel3.jpg" class="carrusel_img" style="width: 100%">
+            <div class="text">3</div>
+        </div>
+
+        <!-- Botones adelante y atras -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Los puntitos de abajo -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
 
     </header>
