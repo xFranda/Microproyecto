@@ -513,7 +513,7 @@ body {
    color: white; 
  }
  
- .html {width: 60%; background-color: #04AA6D;} /* Green */
+ .html {width: "lee_json()"; background-color: #04AA6D;} /* Green */
  .css {width: 50%; background-color: #2196F3;} /* Blue */
  .js {width: 65%; background-color: #f44336;} /* Red */
  .java {width: 80%; background-color: #808080;} /* Dark Grey */

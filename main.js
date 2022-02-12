@@ -84,18 +84,6 @@ function showSlides(n) {
 
 })();
 
-/*function hizoClick() {
-    var nombre = document.getElementById("name").value;
-    var correo = document.getElementById("mail").value;
-    var msg = document.getElementById("msg").value;
-    if (nombre == "" || correo == "" || msg == "") {
-        alert("Debes compeltar ambos campos"); 
-    } else {
-    console.log(nombre,correo, msg)
-    alert("Enviado");
-    }
-    Comprobar();
-  }*/
 function hizoClick(){
     var nombre = document.getElementById("name").value;
     var correo = document.getElementById("mail").value;
@@ -124,3 +112,10 @@ function Comprobar(name,mail,msg) {
         return false;} 
             return true;
   }
+
+  function lee_json() {
+    $.getJSON("datos.json", function(datos) {
+        alert(datos["Serie"]);
+        console.add(datos["Serie"]);
+    });
+}
