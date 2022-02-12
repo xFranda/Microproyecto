@@ -95,10 +95,14 @@ function hizoClick(){
 }
 
 function Comprobar(name,mail,msg) {
-    if (name.value=="") {
+    if (name=="") {
       alert("Debes rellenar el nombre"); 
-      return false;
+      return false;}
+    if(name==Number){
+    alert("No uses números");
+        return false;
     }
+    
     if (name.length<3) {
       alert("El nombre debe tener al menos 3 caracteres"); 
       return false;
@@ -108,7 +112,7 @@ function Comprobar(name,mail,msg) {
       return false;
     }
     if (msg=="") {
-        alert("Debes rellenar el nombre"); 
+        alert("Debes rellenar el mensaje"); 
         return false;} 
             return true;
   }
