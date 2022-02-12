@@ -70,3 +70,45 @@ function showSlides(n) {
     }
 
 })();
+
+/*function hizoClick() {
+    var nombre = document.getElementById("name").value;
+    var correo = document.getElementById("mail").value;
+    var msg = document.getElementById("msg").value;
+    if (nombre == "" || correo == "" || msg == "") {
+        alert("Debes compeltar ambos campos"); 
+    } else {
+    console.log(nombre,correo, msg)
+    alert("Enviado");
+    }
+    Comprobar();
+  }*/
+function hizoClick(){
+    var nombre = document.getElementById("name").value;
+    var correo = document.getElementById("mail").value;
+    var msg = document.getElementById("msg").value;
+    if(Comprobar(nombre,correo,msg)==true){ 
+        console.log(nombre,correo, msg)
+        alert("Enviado");
+    }
+
+}
+
+function Comprobar(name,mail,msg) {
+    if (name.value=="") {
+      alert("Debes rellenar el nombre"); 
+      return false;
+    }
+    if (name.length<3) {
+      alert("El nombre debe tener al menos 3 caracteres"); 
+      return false;
+    }
+    if (mail=="") {
+      alert("Debes poner un email"); 
+      return false;
+    }
+    if (msg=="") {
+        alert("Debes rellenar el nombre"); 
+        return false;} 
+            return true;
+  }
