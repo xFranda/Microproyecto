@@ -284,3 +284,34 @@ body {
     padding: 13px 10px;
     border-radius: 2rem;
 }
+/* Experiencia */
+.exp {
+
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+
+ }
+
+ .exp_contenedor {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1em;
+     align-items: center;
+ }
+.exp_img {
+    max-width: 500px;
+
+}
+.exp_parrafo{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size:large;
+
+}
+.exp_imgs {
+     width: 100%;
+     display: block;
+ }
