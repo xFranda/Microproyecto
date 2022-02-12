@@ -98,11 +98,6 @@ function Comprobar(name,mail,msg) {
     if (name=="") {
       alert("Debes rellenar el nombre"); 
       return false;}
-    if(name==Number){
-    alert("No uses números");
-        return false;
-    }
-    
     if (name.length<3) {
       alert("El nombre debe tener al menos 3 caracteres"); 
       return false;
