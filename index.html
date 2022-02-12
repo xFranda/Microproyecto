@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="shortcur icon" href="./images/favicon3.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <title>Portafolio Estudiantil</title>
 </head>
 <body>
@@ -18,19 +19,19 @@
 
                 <ul class ="nav_link nav_link--menu">
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Inicio</a>
+                        <a data-scroll href="#" class ="nav_links">Inicio</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Experienca</a>
+                        <a data-scroll href="#experiencia" class ="nav_links">Experiencia</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Proyectos</a>
+                        <a data-scroll href="#proyectos" class ="nav_links">Proyectos</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Acerca de mi</a>
+                        <a data-scroll href="#acerca" class ="nav_links">Acerca de mi</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Skills</a>
+                        <a data-scroll href="#skills" class ="nav_links">Skills</a>
                     </li>
                     <img src=".images/close.svg" class="nav_close">
                 </ul>
@@ -74,7 +75,7 @@
     <main>
         <!--Bienvenida del portafolio-->
         <section class = "hero_contenedor contenedor">
-            <h1 class ="hero_titulo">Bienvenido a mi Portafolio Curricular</h1>
+            <h1 class ="hero_titulo" id="experiencia">Bienvenido a mi Portafolio Curricular</h1>
             <p class ="hero_parrafo">Aquí es donde les invito a echarle un ojo a la página completa para que vean que si he
                 aprendido algo en estas últimas semanas donde nunca había ni tocado html, gracias por las prepas Dios Nico
             </p>
@@ -105,7 +106,7 @@
         <!-- Proyectos en los que he trabajado-->>
 
         <section class ="contenedor info">
-            <h2 class ="subtitulo">Proyectos en los que he trabajado</h2>
+            <h2 class ="subtitulo" id ="proyectos">Proyectos en los que he trabajado</h2>
             <p class ="info_parrafo">
                 Tomando en cuenta que empecé ayer a prácticar, solo he podido participar en pequeños proyectos. 
                 Pero aún me quedan numerosas materias que ver y proyectos por hacer.
@@ -186,7 +187,7 @@
             </div>
         </section>
         <section class = "estudiante contenedor">
-            <h2 class="subtitulo">Acerca de mi </h2>
+            <h2 class="subtitulo" id="acerca">Acerca de mi </h2>
 
             <section class="estudiante_contenedor">
                 <article class = "estudiante_padding">
@@ -224,7 +225,7 @@
                 
             </section>
             <section class =barras_skills>
-                <h2 class="subtitulo">Skills</h2>
+                <h2 class="subtitulo" id="skills">Skills</h2>
                 <p>HTML</p>
                 <div class="barritas">
                 <div class="skills html">60%</div>
@@ -292,13 +293,16 @@
                         <a href="#" class ="nav_links">Inicio</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Proyectos</a>
+                        <a href="#proyectos" class ="nav_links">Proyectos</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Experiencia</a>
+                        <a href="#experiencia" class ="nav_links">Experiencia</a>
                     </li>
                     <li class="nav_items">
-                        <a href="#" class ="nav_links">Acerca de mi</a>
+                        <a href="#acerca" class ="nav_links">Acerca de mi</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#skills" class ="nav_links">Skills</a>
                     </li>
                 </ul>
 
@@ -316,5 +320,6 @@
     </footer>
 
     <script src="main.js"></script> 
+    
 </body>
 </html>
